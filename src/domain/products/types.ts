@@ -8,6 +8,9 @@ export type Money = {
 	readonly currency: string
 }
 
+
+//testing merge
+
 export function createPrice(raw: number): Price {
 	if (raw <= 0) throw new Error(`Price must be greater than zero. Got: ${raw}`)
 	return raw as Price
